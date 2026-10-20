@@ -81,4 +81,8 @@ resource "azurerm_linux_virtual_machine" "example" {
     sku       = "server"
     version   = "latest"
   }
+  tags = {
+    managed_by = "terraform"
+    purpose    = "remote-state-learning"
+  }
 }
